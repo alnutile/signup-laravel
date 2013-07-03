@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>Laravel Authentication Demo</title>
+    <link media="all" type="text/css" rel="stylesheet" href="http://fjsaassignup.localhost.com/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+
+        </div><!-- end nav -->
+        
+        <!-- check for flash notification message -->
+        
+            <h1>Sign Up</h1>
+    
+    <!-- @todo partial this out -->
+        
+            <div id="flash_error">
+                    <div class="{"email":["The email has already been taken."],"username":["The username has already been taken."]}">The email has already been taken. </div>
+                    <div class="{"email":["The email has already been taken."],"username":["The username has already been taken."]}">The username has already been taken. </div>
+                </div>
+    
+
+    <form method="POST" action="http://fjsaassignup.localhost.com/signup" accept-charset="UTF-8"><input name="_token" type="hidden" value="T5bCAMEoOVUAfDpgRd8rSw6FBGd7jzQqK58dKu67">
+    <p>
+        <label for="username">Username</label><br/>
+        <input name="username" type="text" value="test101" id="username">    </p>
+
+    <p>
+        <label for="email">Email</label><br/>
+        <input name="email" type="text" value="test101@example.com" id="email">        The email has already been taken.    </p>
+    
+    <p>
+        <label for="password">Password</label><br/>
+        <input name="password" type="password" value="" id="password">    </p>
+
+    <p>
+        <label for="password_confirmation">Password Confirmation</label><br/>
+        <input name="password_confirmation" type="password" value="" id="password_confirmation">    </p>
+
+    <p>
+        <label for="company">Company</label><br/>
+        <input name="company" type="text" value="Test Company" id="company">    </p>
+
+    <p>
+        <label for="firstname">First Name</label><br/>
+        <input name="firstname" type="text" value="Test First Name" id="firstname">    </p>
+
+    <p>
+        <label for="lastname">Last Name</label><br/>
+        <input name="lastname" type="text" value="Test Last Name" id="lastname">    </p>
+
+    <!-- submit button -->
+    <p><input type="submit" value="Sign Up"></p>
+
+    </form>    </div><!-- end container -->
+</body>
+</html>
